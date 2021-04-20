@@ -1,0 +1,45 @@
+<div class="banner-container">
+  <div class="banner-nav-bar">
+    <div><h1><i class="fas fa-play"></i>Watch List</h1></div>
+    <div>
+      <ul class="banner-ul">
+        <li>Login</li>
+        <li class="btn-sign">Sign up</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="banner-info">
+    <div>
+      <p class="banner-title">AVENGERS COLLECTION</p>
+      <p class="banner-subtitle">All movies avaiable right now!</p>
+      <div class="btn-infos">
+        <p class="btn-add">Add to list</p>
+        <p class="btn-more-info">More info</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="movie-category">
+  <p class="category-title">MOVIE LIST</p>
+</div>
+
+<div class="container">
+
+  <div class="box-flex mb-4">
+    <% @lists.each do |list| %>
+
+      <div class="box-display">
+        <img class="box-image" src="<%= list.image %>">
+        <p class="box-title"><%= link_to list.name, list_path(list) %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <h1>Teste</h1>
+</footer>
